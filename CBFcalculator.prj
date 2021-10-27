@@ -1,0 +1,127 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="165714387" file="C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\GUI\CBFcalculator.prj" location="C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\GUI" name="CBFcalculator" target="target.mlapps" target-name="Package App">
+    <param.appname>CBFcalculator</param.appname>
+    <param.authnamewatermark>Elvis Pandzic</param.authnamewatermark>
+    <param.email>e.pandzic@unsw.edu.au</param.email>
+    <param.company>Katharina Gaus Light Microscopy Facility</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>This GUI computes Ciliary Beat Frequency (CBF) from transmission light microscopy image time series of ciliary beating in ALI cultures.</param.summary>
+    <param.description>GUI computes CBF from image time series data, for each pixel spectrum and for an average spectrum of the full field of view. It export data in excell sheets and in matlab file. 
+Portion of this GUI allows user to export data series into an mp4 or avi movie file for viewing and presentations.</param.description>
+    <param.screenshot>C:\Users\BMIF\AppData\Local\Temp\tpa566f870_84a4_403b_8d16_bcee3169d0ee.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+      <item>Image Processing Toolbox</item>
+      <item>Parallel Computing Toolbox</item>
+      <item>Signal Processing Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+      <item>17</item>
+      <item>80</item>
+      <item>8</item>
+    </param.products.id>
+    <param.products.version>
+      <item>9.9</item>
+      <item>11.2</item>
+      <item>7.3</item>
+      <item>8.5</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>f553929c-53b4-4b87-aed1-e54546c2a743</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\CBFcalculator.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\GetOMEData.m</file>
+      <file>${PROJECT_ROOT}\computeCBFperPixel.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\nansum.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\PAM-v1.2\functions\bfmatlab\bfCheckJavaMemory.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\PAM-v1.2\functions\bfmatlab\bfCheckJavaPath.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\PAM-v1.2\functions\bfmatlab\bfGetFileExtensions.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\PAM-v1.2\functions\bfmatlab\bfGetPlane.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\PAM-v1.2\functions\bfmatlab\bfGetReader.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\PAM-v1.2\functions\bfmatlab\bfInitLogging.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\PAM-v1.2\functions\bfmatlab\bfopen.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\PAM-v1.2\functions\bfmatlab\createMinimalOMEXMLMetadata.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\PAM-v1.2\functions\bfmatlab\private\is_octave.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\PAM-v1.2\functions\GUI\Progress.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\readOMEAlternative.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\smoothSeries.m</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\bfmatlab</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r" name="GUI" optional="false">C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\GUI</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
